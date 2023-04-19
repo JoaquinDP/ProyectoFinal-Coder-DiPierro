@@ -21,6 +21,9 @@
   .card-width {
     width: 400px;
   }
+  .button-width {
+    width: 20%;
+  }
 }
 @media (max-width: 576px) {
   .title {
