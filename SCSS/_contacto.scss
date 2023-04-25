@@ -1,0 +1,15 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    input{
+        margin-top: 15px;
+        border-radius: 5px;
+        padding-left: 8px;
+    }
+    button{
+        margin-top: 25px;
+        border-radius: 8px;
+        color: #fff;
+        background-color: #005EB2;
+    }
+}

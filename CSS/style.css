@@ -56,4 +56,20 @@
   color: #fff;
 }
 
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.form input {
+  margin-top: 15px;
+  border-radius: 5px;
+  padding-left: 8px;
+}
+.form button {
+  margin-top: 25px;
+  border-radius: 8px;
+  color: #fff;
+  background-color: #005EB2;
+}
+
 /*# sourceMappingURL=style.css.map */
