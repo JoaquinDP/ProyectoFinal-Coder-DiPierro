@@ -1,3 +1,103 @@
+.gridIndex {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+}
 
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #005EB2;
+}
+@media only screen and (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+main {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "bgIndex bgIndex" "titulo titulo" "tIzq iD";
+}
+main .bgIndex {
+  grid-area: bgIndex;
+}
+main .titulo {
+  grid-area: titulo;
+}
+main .textoIzq {
+  grid-area: tIzq;
+}
+main .imgDer {
+  grid-area: iD;
+}
+@media only screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+footer {
+  background-color: #4d4d4d;
+  color: #fff;
+}
+@media only screen and (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: "logo rrss contacto" "copy copy copy";
+  }
+  footer .logo {
+    grid-area: logo;
+  }
+  footer .rrss {
+    grid-area: rrss;
+  }
+  footer .contacto {
+    grid-area: contacto;
+  }
+  footer .copy {
+    grid-area: copy;
+  }
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+ul {
+  display: flex;
+}
+@media only screen and (max-width: 768px) {
+  ul {
+    flex-wrap: wrap;
+  }
+}
+ul li {
+  list-style-type: none;
+  padding: 10px;
+  margin: 2px;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+ul li a:hover {
+  color: grey;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,57 @@
+.gridIndex{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #005EB2;
+    @media only screen and (max-width: 768px){
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+main{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    "bgIndex bgIndex"
+    "titulo titulo"
+    "tIzq iD";
+    .bgIndex{grid-area: bgIndex;}
+    .titulo{grid-area: titulo;}
+    .textoIzq{grid-area: tIzq;}
+    .imgDer{grid-area: iD;}
+    @media only screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+    }
+}
+footer{
+    @media only screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    @media only screen and (min-width: 1024px){
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "logo rrss contacto"
+    "copy copy copy";
+    .logo{grid-area: logo;}
+    .rrss{grid-area: rrss;}
+    .contacto{grid-area: contacto;}
+    .copy{grid-area: copy;}
+}
+background-color: #4d4d4d;
+color: #fff;
+}
+.img-fluid{
+    width: 100%;
+    height: auto;
+}
